@@ -1,4 +1,4 @@
-repository "Ether-No@KnoxSoftwareLabs@cloud"
+repository "Ether-No@Knox_Software_Labs@cloud"
   path "/"
     br "/main"
     co "/main"
