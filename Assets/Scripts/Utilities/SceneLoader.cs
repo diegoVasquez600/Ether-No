@@ -7,7 +7,7 @@ public class SceneLoader : MonoBehaviour
     {
         if (string.IsNullOrEmpty(sceneName))
         {
-            Debug.LogError("El nombre de la Scena esta nula o vacio");
+            Debug.LogError("El nombre de la Escena esta nula o vacio");
             return;
         }
         if (Application.CanStreamedLevelBeLoaded(sceneName))
