@@ -26,7 +26,7 @@ public class DoorController : MonoBehaviour
         // Validar que el collider exista
         if (doorCollider == null)
         {
-            Debug.LogError("No se encontró un Collider en el objeto puerta. Por favor, verifica que el objeto 'door' tenga un componente Collider.");
+            print("No se encontró un Collider en el objeto puerta. Por favor, verifica que el objeto 'door' tenga un componente Collider.");
         }
     }
 
@@ -43,7 +43,7 @@ public class DoorController : MonoBehaviour
             if (doorCollider != null)
             {
                 doorCollider.enabled = !isOpen; // Desactivar si está abierta
-                Debug.Log($"Collider de la puerta {(isOpen ? "desactivado" : "activado")}");
+                print($"Collider de la puerta {(isOpen ? "desactivado" : "activado")}");
             }
         }
 
@@ -57,7 +57,7 @@ public class DoorController : MonoBehaviour
         if (collision.collider.CompareTag(playerTag))
         {
             playerNearby = true;
-            Debug.Log("Jugador cerca de la puerta.");
+            print("Jugador cerca de la puerta.");
         }
     }
 
@@ -67,7 +67,7 @@ public class DoorController : MonoBehaviour
         if (collision.collider.CompareTag(playerTag))
         {
             playerNearby = false;
-            Debug.Log("Jugador se alejó de la puerta.");
+            print("Jugador se alejó de la puerta.");
         }
     }
 }
